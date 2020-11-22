@@ -1,0 +1,34 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" standalone = "no" ?>
+<xsd:schema xmlns:xsd= "http://www.w3.org/2001/XMLSchema">
+  <xsd:element name = "MonsterDatabase">
+
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name ="MonsterList">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name = "Monster" maxOccurs = "unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name = "name" type = "xsd:string"/>
+                    <xsd:element name = "spriteRef" type ="xsd:integer"/>
+                    <xsd:element name = "baseLevel" type ="xsd:integer"/>
+                    <xsd:element name = "health" type = "xsd:integer" />
+                    <xsd:element name = "minDamage" type = "xsd:integer" />
+                    <xsd:element name = "maxDamage" type ="xsd:integer"/>
+                    <xsd:element name = "accuracy" type ="xsd:integer"/>
+                    <xsd:element name = "attackSpeed" type ="xsd:integer"/>
+                    <xsd:element name = "armor" type ="xsd:integer"/>
+                    <xsd:element name = "difficultyToHit" type = "xsd:integer"/>
+                  </xsd:sequence >
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    
+  </xsd:element>
+</xsd:schema>            

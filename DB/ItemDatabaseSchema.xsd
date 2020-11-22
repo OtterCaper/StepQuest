@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone ="no" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name = "ItemDatabase">
+    
+    <xsd:complexType>
+      <xsd:sequence>
+        
+        <xsd:element name = "WeaponDatabase">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name = "Weapon" maxOccurs = "unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name = "name" type = "xsd:string"/>
+                    <xsd:element name = "weaponType" type = "xsd:string"/>
+                    <xsd:element name = "spriteRef" type = "xsd:integer"/>
+                    <xsd:element name = "material" type = "xsd:string"/>
+                    <xsd:element name = "value" type = "xsd:integer"/>
+                    <xsd:element name = "defence" type = "xsd:integer"/>
+                    <xsd:element name = "attackSpeed" type = "xsd:integer"/>
+                    <xsd:element name = "minDamage" type = "xsd:integer"/>
+                    <xsd:element name = "maxDamage" type = "xsd:integer"/>
+                    <xsd:element name = "critChance" type = "xsd:decimal"/>
+                    <xsd:element name = "accuracy" type = "xsd:integer"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+
+        <xsd:element name = "ArmorDatabase">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name = "Armor" maxOccurs = "unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name = "name" type = "xsd:string"/>
+                    <xsd:element name = "armorType" type = "xsd:string"/>
+                    <xsd:element name = "slot" type = "xsd:string"/>
+                    <xsd:element name = "spriteRef" type = "xsd:integer"/>
+                    <xsd:element name = "material" type = "xsd:string"/>
+                    <xsd:element name = "value" type = "xsd:integer"/>
+                    <xsd:element name = "defence" type = "xsd:integer"/>
+                    <xsd:element name = "attackSpeed" type = "xsd:integer"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        
+      </xsd:sequence> 
+    </xsd:complexType>
+    
+  </xsd:element>
+</xsd:schema>
